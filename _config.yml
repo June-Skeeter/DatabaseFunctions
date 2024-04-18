@@ -1,0 +1,7 @@
+RootDirs:
+  Database: W:/
+  Highfreq: Y:/
+  EddyPro: C:/Program Files/LI-COR/EddyPro-7.0.9/bin/
+  LocalOutputs: C:/temp/
+  Datadump: X:/
+  SitesFolder: //vinimet.geog.ubc.ca/contributions$/Copy_to_Sites_JSkeeter/

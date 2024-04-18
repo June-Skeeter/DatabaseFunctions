@@ -1,0 +1,99 @@
+# BB_WT:
+#   siteID: BB
+#   filename: https://docs.google.com/spreadsheets/d/e/2PACX-1vQPareyDN7uQ6Jxq5aOJG0lGvVnIZHrkrzX10JBuCEX_6Xe1Y-yIuHBa_hSfaMSGs4kJed0fB5MWKb9/pubhtml
+#   subfolder: Met/Manual
+#   subtable: 
+#     BB:
+#       ID: 0
+#       headerList: 
+#         ID: 
+#         Year: YYYY
+#         Month: MM
+#         Day: DD
+#         Hour: HH
+#         Minute: MM
+#         WTD_cm: cm
+#         Pipe_Height_cm: cm
+#   dateCols: >
+#     Year
+#     Month
+#     Day
+#     Hour
+#     Minute
+#   dateFmt: '%Y%m%d%H%M'
+#   is_dst: True
+#   headerRow: 1
+#   exclude: >
+#     ID
+#   readme: Manual water table depth data for the BB Site, copied from here https://docs.google.com/spreadsheets/d/e/2PACX-1vQPareyDN7uQ6Jxq5aOJG0lGvVnIZHrkrzX10JBuCEX_6Xe1Y-yIuHBa_hSfaMSGs4kJed0fB5MWKb9/pubhtml - WTD cm is a manual observation of water table depth and Pipe_Height cm is a manual measurement of pipe height (mean of two obs.)
+
+# BB2_WT:
+#   siteID: BB2
+#   filename: https://docs.google.com/spreadsheets/d/e/2PACX-1vQPareyDN7uQ6Jxq5aOJG0lGvVnIZHrkrzX10JBuCEX_6Xe1Y-yIuHBa_hSfaMSGs4kJed0fB5MWKb9/pubhtml
+#   subfolder: Met/Manual
+#   subtable:
+#     BB2:
+#       ID: 1
+#       headerList: 
+#         ID: 
+#         Year: YYYY
+#         Month: MM
+#         Day: DD
+#         Hour: HH
+#         Minute: MM
+#         WTD_cm: cm
+#         Pipe_Height_cm: cm
+#   dateCols: >
+#     Year
+#     Month
+#     Day
+#     Hour
+#     Minute
+#   dateFmt: '%Y%m%d%H%M'
+#   is_dst: True
+#   headerRow: 1
+#   exclude: >
+#     ID
+#   readme: Manual water table depth data for the BB2 Site, copied from here https://docs.google.com/spreadsheets/d/e/2PACX-1vQPareyDN7uQ6Jxq5aOJG0lGvVnIZHrkrzX10JBuCEX_6Xe1Y-yIuHBa_hSfaMSGs4kJed0fB5MWKb9/pubhtml - WTD cm is a manual observation of water table depth and Pipe_Height cm is a manual measurement of pipe height (mean of two obs.)
+
+# BBS_WT:
+#   siteID: BBS
+#   filename: https://docs.google.com/spreadsheets/d/e/2PACX-1vQPareyDN7uQ6Jxq5aOJG0lGvVnIZHrkrzX10JBuCEX_6Xe1Y-yIuHBa_hSfaMSGs4kJed0fB5MWKb9/pubhtml
+#   subfolder: Met/Manual
+#   subtable:
+#     BBS:
+#       ID: 2
+#       headerList: 
+#         ID: 
+#         Year: YYYY
+#         Month: MM
+#         Day: DD
+#         Hour: HH
+#         Minute: MM
+#   dateCols: >
+#     Year
+#     Month
+#     Day
+#     Hour
+#     Minute
+#   dateFmt: '%Y%m%d%H%M'
+#   is_dst: True
+#   headerRow: 1
+#   exclude: >
+#     ID
+#   readme: Manual water table depth data for the BBS Site, copied from here https://docs.google.com/spreadsheets/d/e/2PACX-1vQPareyDN7uQ6Jxq5aOJG0lGvVnIZHrkrzX10JBuCEX_6Xe1Y-yIuHBa_hSfaMSGs4kJed0fB5MWKb9/pubhtml - WTD cm is a manual observation of water table depth and Pipe_Height cm is a manual measurement of pipe height (mean of two obs.)
+
+BBS_CH:
+  siteID: BBS
+  filename: https://docs.google.com/spreadsheets/d/e/2PACX-1vQgO2_oo1MH_kgFqz_-nxjQoYOL9myNclFjN8yhDJ8EmniA1LNC3-5fymUXQ3lK7coP8TISGXD-06Us/pubhtml
+  subfolder: Met/Manual
+  prefix: CH
+  subtable:
+    BBS:
+      ID: 0
+  dateCols: Date
+  dateFmt: Auto
+  is_dst: True
+  headerRow: 1
+  Aggregate: mean,std
+  readme: Manual canopy height data for the BB2 Site, copied from here https://docs.google.com/spreadsheets/d/e/2PACX-1vQgO2_oo1MH_kgFqz_-nxjQoYOL9myNclFjN8yhDJ8EmniA1LNC3-5fymUXQ3lK7coP8TISGXD-06Us/pubhtml - Columns S1-S40 represent `random` samples of canopy height on selected dates

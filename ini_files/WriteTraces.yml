@@ -1,0 +1,222 @@
+
+BBS_Flux_Station:
+  siteID: BBS
+  inputData: '**Datadump**/**siteID**/EC_Station/'
+  fileNamePatterns: >
+    BBS.MET
+  subfolder: Met
+  dateCols: TIMESTAMP
+  dateFmt: Auto
+  is_dst: False
+  headerRow: 1
+  firstDataRow: 3
+  exclude: RECORD
+  readme: Data from the BBS Flux Station - see the program currently running on the logger here https://github.com/ubc-micromet/DataLogger_Programs/tree/main/BBS
+  copy_to: '**SitesFolder**/**siteID**/EC_Station/'
+
+BBS_PSW_S:
+  siteID: BBS
+  inputData: '**Datadump**/**siteID**/Chamberdata/Loggerdata'
+  fileNamePatterns: CR10X_PSW_S
+  subfolder: Met
+  prefix: PSW_S
+  subtable:
+    HH:
+      ID: 121
+      headerList: 
+        ID:
+        Year: YYYY
+        Day: DOY
+        Hour_Minute: HHMM
+        PannelTemp: degC
+        TSoil_5cm: degC
+        TSoil_10cm: degC
+        TSoil_30cm: degC
+        VWC: '%'
+        pa: us
+        WTH: m
+        TWater: C
+    DD:
+      ID: 122
+      headerList: 
+        ID:
+        Year: YYYY
+        Day: DOY
+        Hour_Minute: HHMM
+        BattV_MIN: V
+        ProgSig:
+  dateCols:
+    Year
+    Day
+    Hour_Minute
+  dateFmt: '%Y%j%H%M'
+  is_dst: False
+  firstDataRow: 0
+  exclude: >
+    ID
+    ProgSig
+  readme: Data from the BBS Pine sphagnum woodland (PSW) seedling (S) Station - see the program currently running on the logger here https://github.com/ubc-micromet/DataLogger_Programs/tree/main/BBS
+
+BBS_PSW_R:
+  siteID: BBS
+  inputData: '**Datadump**/**siteID**/Chamberdata/Loggerdata'
+  fileNamePatterns: CR10X_PSW_R
+  subfolder: Met
+  prefix: PSW_R
+  subtable:
+    HH:
+      ID: 131
+      headerList: 
+        ID:
+        Year: YYYY
+        Day: DOY
+        Hour_Minute: HHMM
+        PannelTemp: degC
+        TSoil_5cm: degC
+        TSoil_10cm: degC
+        TSoil_30cm: degC
+        VWC: '%'
+        pa: us
+    DD:
+      ID: 132
+      headerList: 
+        ID:
+        Year: YYYY
+        Day: DOY
+        Hour_Minute: HHMM
+        BattV_MIN: V
+        ProgSig:
+  dateCols:
+    Year
+    Day
+    Hour_Minute
+  dateFmt: '%Y%j%H%M'
+  is_dst: False
+  firstDataRow: 0
+  exclude: >
+    ID
+    ProgSig
+  readme: Data from the BBS Pine sphagnum woodland (PSW) seedling removed (r) Station - see the program currently running on the logger here https://github.com/ubc-micromet/DataLogger_Programs/tree/main/BBS
+
+BBS_PSTS:
+  siteID: BBS
+  inputData: '**Datadump**/**siteID**/Chamberdata/Loggerdata'
+  fileNamePatterns: CR10X_PSTS
+  subfolder: Met
+  prefix: PSTS
+  subtable:
+    HH:
+      ID: 111
+      headerList: 
+        ID:
+        Year: YYYY
+        Day: DOY
+        Hour_Minute: HHMM
+        PannelTemp: degC
+        S_TSoil_5cm: degC
+        S_TSoil_10cm: degC
+        S_TSoil_30cm: degC
+        R_TSoil_5cm: degC
+        R_TSoil_10cm: degC
+        R_TSoil_30cm: degC
+    DD:
+      ID: 112
+      headerList: 
+        ID:
+        Year: YYYY
+        Day: DOY
+        Hour_Minute: HHMM
+        BattV_MIN: V
+        ProgSig:
+  dateCols:
+    Year
+    Day
+    Hour_Minute
+  dateFmt: '%Y%j%H%M'
+  is_dst: False
+  firstDataRow: 0
+  exclude: >
+    ID
+    ProgSig
+  readme: Data from the BBS Pine sphagnum tall shrub (PSTS) both seedling (S) & removed (r) coverd by same Station - see the program currently running on the logger here https://github.com/ubc-micromet/DataLogger_Programs/tree/main/BBS
+
+BBS_PSLS:
+  siteID: BBS
+  inputData: '**Datadump**/**siteID**/Chamberdata/Loggerdata'
+  fileNamePatterns: CR10X_PSLS
+  subfolder: Met
+  prefix: PSLS
+  subtable:
+    HH:
+      ID: 101
+      headerList: 
+        ID:
+        Year: YYYY
+        Day: DOY
+        Hour_Minute: HHMM
+        PannelTemp: degC
+        S_old_TSoil_5cm: degC
+        S_old_TSoil_10cm: degC
+        S_old_TSoil_30cm: degC
+        R_TSoil_5cm: degC
+        R_TSoil_10cm: degC
+        R_TSoil_30cm: degC
+    DD:
+      ID: 102
+      headerList: 
+        ID:
+        Year: YYYY
+        Day: DOY
+        Hour_Minute: HHMM
+        BattV_MIN: V
+        ProgSig:
+  dateCols:
+    Year
+    Day
+    Hour_Minute
+  dateFmt: '%Y%j%H%M'
+  is_dst: False
+  firstDataRow: 0
+  exclude: >
+    ID
+    ProgSig
+  readme: Data from the BBS Pine sphagnum low shrub (PSLS) seedling removed (r) ...  (S) data are bad/old and can be ignored - see the program currently running on the logger here https://github.com/ubc-micromet/DataLogger_Programs/tree/main/BBS
+
+BBS_PSLS_S:
+  siteID: BBS
+  inputData: '**Datadump**/**siteID**/Chamberdata/Loggerdata'
+  fileNamePatterns: CR10X_PSLS_S
+  subfolder: Met
+  prefix: PSLS_S
+  subtable:
+    HH:
+      ID: 141
+      headerList: 
+        ID:
+        Year: YYYY
+        Day: DOY
+        Hour_Minute: HHMM
+        PannelTemp: degC
+        TSoil_5cm: degC
+        TSoil_10cm: degC
+        TSoil_30cm: degC
+    DD:
+      ID: 142
+      headerList: 
+        ID:
+        Year: YYYY
+        Day: DOY
+        Hour_Minute: HHMM
+        BattV_MIN: V
+        ProgSig:
+  dateCols:
+    Year
+    Day
+    Hour_Minute
+  dateFmt: '%Y%j%H%M'
+  is_dst: False
+  firstDataRow: 0
+  exclude: >
+    ID
+    ProgSig
+  readme: Data from the BBS Pine sphagnum low shrub (PSLS) seedling (S) data - see the program currently running on the logger here https://github.com/ubc-micromet/DataLogger_Programs/tree/main/BBS
